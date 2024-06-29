@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Results</title>
+</head>
+<body>
+    <h2>Final Results</h2>
+    {% if result.res == 'PASS' %}
+        <h1>Your result is : <b>Passed</b></h1>
+    {% else %}
+        <h1>Your result is : <b>Failed</b></h1>
+    {% endif %}
+    <p>Your score is: {{ result.score }}</p>
+</body>
+</html>
